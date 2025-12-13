@@ -34,26 +34,26 @@ students-database-bash/
 
 ## ▶️ How to Use
 
-### 1️⃣ Restore the database
-```bash
+1️⃣ Restore the database
 psql -U freecodecamp < students.sql
+
 2️⃣ Populate the database
 bash
 Copiar código
 ./insert_data.sh
+
 3️⃣ Run queries
 bash
 Copiar código
 ./student_info.sh
+
+---
+
 ✅ What This Project Covers
 🔗 Relational database design
-
 🗝️ Primary and foreign keys
-
 🔄 Many-to-many relationships
-
 ⚙️ Automated data insertion from CSV files
-
 📊 SQL queries with JOIN, GROUP BY, and HAVING
 
 👤 Author
