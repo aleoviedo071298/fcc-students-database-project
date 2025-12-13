@@ -1,34 +1,26 @@
-Perfecto, vamos a dejarlo **limpio, prolijo y 100% copy-paste**, sin secciones de más ni ruido visual.
-Este queda **bien estético en GitHub** y profesional.
-
----
-
-```md
-# Students Database Bash Project
+# 🎓 Students Database Bash Project
 
 Bash scripts to populate and query a relational PostgreSQL students database using CSV files.
 
 ---
 
-## Overview
+## 📖 Overview
 
-This project demonstrates how to automate the creation, population, and querying of a PostgreSQL database using Bash scripting.  
-It focuses on relational database concepts such as primary keys, foreign keys, and many-to-many relationships.
-
----
-
-## Technologies
-
-- Bash
-- PostgreSQL
-- SQL
-- CSV
+This project automates the creation, population, and querying of a PostgreSQL database using Bash.  
+It demonstrates core relational database concepts such as primary keys, foreign keys, and many-to-many relationships.
 
 ---
 
-## Project Structure
+## 🛠️ Technologies
 
-```
+- 🐧 Bash
+- 🐘 PostgreSQL
+- 🧠 SQL
+- 📄 CSV
+
+---
+
+## 📂 Project Structure
 
 students-database-bash/
 ├── insert_data.sh
@@ -38,45 +30,34 @@ students-database-bash/
 ├── students.csv
 └── README.md
 
-````
+yaml
+Copiar código
 
 ---
 
-## How to Use
+## ▶️ How to Use
 
-### 1. Restore the database
+### 1️⃣ Restore the database
 ```bash
 psql -U freecodecamp < students.sql
-````
-
-### 2. Populate the database
-
-```bash
+2️⃣ Populate the database
+bash
+Copiar código
 ./insert_data.sh
-```
-
-### 3. Run queries
-
-```bash
+3️⃣ Run queries
+bash
+Copiar código
 ./student_info.sh
-```
+✅ What This Project Covers
+🔗 Relational database design
 
----
+🗝️ Primary and foreign keys
 
-## What This Project Covers
+🔄 Many-to-many relationships
 
-* Relational database design
-* Primary and foreign keys
-* Many-to-many relationships
-* Automated data insertion from CSV files
-* SQL queries with JOIN, GROUP BY, and HAVING
+⚙️ Automated data insertion from CSV files
 
----
+📊 SQL queries with JOIN, GROUP BY, and HAVING
 
-## Author
-
-Alejandro Oviedo
-
-```
-
----
+👤 Author
+Alejandro Oviedo****
