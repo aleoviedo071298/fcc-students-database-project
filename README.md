@@ -30,9 +30,6 @@ students-database-bash/
 ├── students.csv
 └── README.md
 
-yaml
-Copiar código
-
 ---
 
 ## ▶️ How to Use
