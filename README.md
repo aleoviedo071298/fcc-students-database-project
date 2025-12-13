@@ -1,81 +1,82 @@
+Perfecto, vamos a dejarlo **limpio, prolijo y 100% copy-paste**, sin secciones de más ni ruido visual.
+Este queda **bien estético en GitHub** y profesional.
+
+---
+
+```md
 # Students Database Bash Project
 
-This project demonstrates how to build, populate, and query a relational PostgreSQL database using Bash scripts and CSV files.
-
-It was created as part of a relational database learning path and focuses on real-world database concepts such as normalization, foreign keys, and automated data insertion.
+Bash scripts to populate and query a relational PostgreSQL students database using CSV files.
 
 ---
 
-## 📌 Features
+## Overview
 
-- Relational database design with multiple tables
-- One-to-many and many-to-many relationships
-- Primary keys and foreign keys
-- Bash script to populate the database from CSV files
-- Bash script to run analytical SQL queries
-- Full PostgreSQL database dump included
+This project demonstrates how to automate the creation, population, and querying of a PostgreSQL database using Bash scripting.  
+It focuses on relational database concepts such as primary keys, foreign keys, and many-to-many relationships.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies
 
 - Bash
 - PostgreSQL
-- SQL (JOINs, GROUP BY, HAVING, subqueries)
-- CSV files for data input
+- SQL
+- CSV
 
 ---
 
-## 📂 Project Structure
+## Project Structure
+
+```
 
 students-database-bash/
-├── insert_data.sh # Populates the database using CSV files
-├── student_info.sh # Runs SQL queries and prints results
-├── students.sql # Full PostgreSQL database dump
-├── courses.csv # Courses and majors data
-├── students.csv # Students data
+├── insert_data.sh
+├── student_info.sh
+├── students.sql
+├── courses.csv
+├── students.csv
 └── README.md
+
+````
 
 ---
 
-## ▶️ How to Run
+## How to Use
 
 ### 1. Restore the database
 ```bash
 psql -U freecodecamp < students.sql
-2. Populate the database
-bash
-Copiar código
+````
+
+### 2. Populate the database
+
+```bash
 ./insert_data.sh
-3. Run queries
-bash
-Copiar código
+```
+
+### 3. Run queries
+
+```bash
 ./student_info.sh
-📊 Example Queries Included
-Students with a 4.0 GPA
+```
 
-Average GPA calculations
+---
 
-Courses with only one student enrolled
+## What This Project Covers
 
-Majors with no students
+* Relational database design
+* Primary and foreign keys
+* Many-to-many relationships
+* Automated data insertion from CSV files
+* SQL queries with JOIN, GROUP BY, and HAVING
 
-Filtering with conditions, patterns, and ordering
+---
 
-🎯 Learning Goals
-Practice relational database modeling
+## Author
 
-Understand and use foreign keys
-
-Automate database tasks with Bash
-
-Write non-trivial SQL queries
-
-Work with real data input formats
-
-📎 Notes
-This project is intended for learning and demonstration purposes.
-The database structure and scripts are designed to be simple, clear, and reproducible.
-
-👤 Author
 Alejandro Oviedo
+
+```
+
+---
