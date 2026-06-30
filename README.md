@@ -1,27 +1,24 @@
-# 🎓 Students Database Bash Project
+# Students Database Bash Project
 
-Bash scripts to populate and query a relational PostgreSQL students database using CSV files.
+Bash scripts to populate and query a relational PostgreSQL students database from CSV
+files, built for freeCodeCamp's Relational Database certification.
 
----
+## Overview
 
-## 📖 Overview
+This project automates the creation, population, and querying of a PostgreSQL
+database using Bash. It demonstrates core relational database concepts: primary
+keys, foreign keys, and many-to-many relationships.
 
-This project automates the creation, population, and querying of a PostgreSQL database using Bash.  
-It demonstrates core relational database concepts such as primary keys, foreign keys, and many-to-many relationships.
+## Tech Stack
 
----
+- Bash
+- PostgreSQL
+- SQL
+- CSV
 
-## 🛠️ Technologies
+## Project Structure
 
-- 🐧 Bash
-- 🐘 PostgreSQL
-- 🧠 SQL
-- 📄 CSV
-
----
-
-## 📂 Project Structure
-
+```
 students-database-bash/
 ├── insert_data.sh
 ├── student_info.sh
@@ -29,32 +26,31 @@ students-database-bash/
 ├── courses.csv
 ├── students.csv
 └── README.md
+```
 
----
+## How to Use
 
-## ▶️ How to Use
+1. Restore the database:
+   ```bash
+   psql -U freecodecamp < students.sql
+   ```
+2. Populate the database from the CSV files:
+   ```bash
+   ./insert_data.sh
+   ```
+3. Run queries:
+   ```bash
+   ./student_info.sh
+   ```
 
-1️⃣ Restore the database
-psql -U freecodecamp < students.sql
+## What This Project Covers
 
-2️⃣ Populate the database
-bash
-Copiar código
-./insert_data.sh
+- Relational database design
+- Primary and foreign keys
+- Many-to-many relationships
+- Automated data insertion from CSV files
+- SQL queries with `JOIN`, `GROUP BY`, and `HAVING`
 
-3️⃣ Run queries
-bash
-Copiar código
-./student_info.sh
+## Author
 
----
-
-✅ What This Project Covers
-🔗 Relational database design
-🗝️ Primary and foreign keys
-🔄 Many-to-many relationships
-⚙️ Automated data insertion from CSV files
-📊 SQL queries with JOIN, GROUP BY, and HAVING
-
-👤 Author
-Alejandro Oviedo****
+**Alejandro Oviedo**
